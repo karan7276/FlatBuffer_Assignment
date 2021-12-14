@@ -1,0 +1,26 @@
+
+table Person{
+    name : string;
+    age : short;
+    weight : float;
+    gender : string;
+}
+
+table Group{
+    groupname : string;
+    average_age : float;
+    average_weight : float;
+    names : [string];
+}
+
+table Client{
+    person : Person;
+    group : Group;
+    is_person : bool;
+}
+
+table ClientList{
+    clients : [Client];
+}
+
+root_type ClientList;
